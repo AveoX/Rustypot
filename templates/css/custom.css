@@ -1,0 +1,502 @@
+::-webkit-scrollbar { 
+    display: none; 
+}
+.panel-body a{
+	color:#fff;
+}
+.roundModalBody a{
+	color:#000
+}
+/* 
+* MODIFICATIONS
+*/
+
+body {
+	background: url('/templates/img/background.png') center no-repeat fixed #fff;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+
+	color: white;
+}
+
+/* COLOR */
+#nav {
+	background-color: #F64343;
+}
+
+#nav li a {
+	color: black;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #F64343 !important;
+}
+
+.navbar {
+	border-color: #E0393A !important;
+}
+
+.modal-header {
+	background-color: #F64343 !important;
+
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+}
+
+/* PANEL */
+
+.panel {
+	background-color: #191919;
+	border-color: #E0393A !important;
+	border-width: 2px !important;
+}
+
+.panel-heading {
+	background-color: #F64343 !important;
+
+	border-color: #191919 !important;
+
+	color: white !important;
+
+	border-radius: 0 !important;
+	/* outline: 3px solid #E0393A;
+    outline-offset: -4px; */
+}
+
+.modal-body {
+	color: black;
+}
+
+.panel-body {
+	border-color: #191919 !important;
+}
+
+.greybox {
+	background-color: #191919;
+}
+
+.redPanel {
+	background-color: #F64343 !important;
+	border-color: #b22929;
+
+	outline: 4px solid #E0393A;
+    outline-offset: -5px;
+}
+
+.antiPanel {
+	background-color: transparent;
+	border: 0;
+}
+
+.redPanel .redText {
+	color: #000;
+	font-weight: bold;
+}
+
+.gameItem .redText {
+	color: #F64343 !important;
+}
+
+#maxSizeDivsUnder{
+	margin: auto;
+}
+
+#maxSizeDivsUnder div{
+	max-width: 666px;
+}
+
+/* centered */
+.centered {
+    margin: auto;
+    max-width: 80%;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+/* LAST WINNER*/
+.lastWinnerPanel {
+	height: 250px;
+	font-size: 15px;
+}
+
+	#lastWinnerImg {
+		height: 100px;
+		width: 100px;
+	}
+ 
+	.lastWinnerPanel span {
+		font-size: 16px !important;
+	}
+/**/
+
+/* JACKPOT */
+.jackpotPanel {
+	
+}
+
+#roundInfo{
+	font-size: 33px;
+}
+
+#jackpotPlay{
+	font-size: 40px !important;
+	cursor: pointer;
+}
+
+#rollContentRoll{
+	overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    max-width: 12800px !important;
+}
+
+	.rollImg{
+		display: inline-block;
+		width: 64px;
+		height: 64px;
+		border: 2px solid gray;
+	}
+
+/**/
+
+/* CURRENT ITEMS */
+.gameItemOwner {
+	margin-bottom: 20px !important;
+
+	border: 1px solid red;
+
+	-webkit-border-top-left-radius: 3px;
+	-webkit-border-top-right-radius: 3px;
+	-moz-border-radius-topleft: 3px;
+	-moz-border-radius-topright: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+
+	padding: 5px;
+}	
+	.outer-div { position: relative; float: right; right: 50%; }
+	.inner-div { position: relative; float: right; right: -50%; }
+	.floating-div {
+	 float: left;
+	 margin: 0 1.5em;
+	 //border: 1px solid red;
+	}
+
+	.clearfix:before,
+	.clearfix:after { content: " "; display: table; }
+	.clearfix:after { clear: both; }
+	.clearfix { *zoom: 1; }
+
+	.gameItem {
+		position: relative;
+		/* border: 1px solid #55aac1; */
+		height: 80px;
+		width: 65px;
+		z-index: 1;
+		float: left;
+		margin: 5px;
+		background-color: #FFFFFF; 
+	}
+
+		.gameItem span {
+			left: 0;
+		    position:absolute;
+		    text-align:center;
+		    bottom: 0;
+		    width: 100%;
+		    z-index: 2;
+		}
+
+
+/**/
+
+/* CHAT */
+.chatPanel {
+	height: 450px;
+}
+
+	#chatArea {
+		height: 330px;
+		padding-left: 0;
+		padding-right: 0;
+		list-style-type: none;
+		word-wrap: break-word;
+	}
+
+	.chatMessage {
+		text-align: left;
+	}	
+/**/
+
+/* ANNOUNCEMENT*/
+.announcementPanel {
+	height: 350px;
+}
+/**/
+
+
+/*
+* CUSTOM
+*/
+
+#loader {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('/templates/img/preloader.gif') center no-repeat #fff;
+}
+
+.scroll {
+	overflow-y: scroll !important;
+	overflow-x: hidden !important;
+}
+
+.noScroll {
+	overflow: hidden !important;
+}
+
+.redText {
+	color: #F64343;
+}
+
+
+/*
+* MyProfile
+*/
+
+.page{
+	max-width:1400px;
+	margin:15px auto;
+	border:1px solid #151515;
+	background-color:#F2F2F2;
+	padding:10px 25px;
+	overflow:hidden;
+	font-size:15px;
+	float:left;
+}
+
+.name{
+	font-size:24px;
+	margin-bottom:10px;	
+}
+
+.text-success{
+	color:#000000;
+	font-size: 18px;
+}
+.input-button{
+	overflow:auto;	
+}
+.group-input{
+	display:-ms-flexbox;
+	display:flex;	
+}
+
+.group-small{
+	padding:7px;
+	font-size:15px;
+}
+.no-step{
+	-moz-appearance:textfield;
+		
+}
+.addon{
+	border:1px solid #141414;
+	border-left:0;	
+}
+.btn{
+	 border-radius:4px;
+	 font-size:13.3333px;
+	 padding:8px 10px;
+	 height:36px;
+}
+.btn-red{
+	color:#fff;
+	background-color:#f64343;
+	border-color:#f64343;	
+}
+.btn-red:hover{
+	background:#AB4646;
+}
+
+.trade-input{
+	background-color: #FFFFFF;
+}
+
+.user-profile{
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	-js-display:flex;
+	display:flex;
+	max-width:1400px;
+	margin:0 auto 20px;
+	float: left;
+}
+
+.userpicture{
+	border-radius: 18px
+}
+
+.info{
+	margin-top:10px;
+	font-size:12px;
+}
+
+.nameprofile{
+	padding-left: 15px; 
+}
+
+
+#jackpotItems{
+	position: absolute;
+	top: 25%;
+
+	transform: translateX(-50%); 
+
+	font-size: 50px;
+	color: white !important;
+	font-weight: bold;
+}
+
+#jackpotTimer{
+	position: absolute;
+	right: 20px;
+	bottom: 40px;
+
+	font-size: 27px;
+	color: white;
+	font-weight: bold;
+}
+
+
+#roundTotal{
+	position: absolute;
+	left: 20px;
+	bottom: 40px;
+
+	font-size: 27px;
+	color: white;
+	font-weight: bold;
+}
+
+#roundHash{
+	position: absolute;
+	bottom: 25px;
+
+	transform: translateX(-50%); 
+
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+}
+
+/* #roundHash::before{
+	content: "Hash: ";
+} */
+
+.ownerAvatar {
+	height: 50px;
+	width: 50px;
+}
+
+
+.itemChoose {
+	float: left;
+	position: relative;
+	width: 150px;
+	height: 150px;
+
+	background: #d3d3d3;
+
+	border: 1px solid #bdbdbd;
+
+	cursor: pointer;
+}
+
+.itemSelected {
+	border: 1px solid red !important;
+
+	z-index: 1;
+}
+
+.checkmark {
+	background: url('/templates/img/checkmark.png') no-repeat;
+	background-size: 65%;
+	background-position: center;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 150px;
+	height: 150px;
+
+	z-index: 2;
+}
+
+
+
+.itemSelected img {
+	-webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+	filter: blur(2px);
+}
+
+#depositModalBody {
+	padding: 35px !important;
+	max-height: 500px;
+	overflow: scroll;
+}
+
+.historyBody {
+	background-color: #F64343 !important;
+}
+
+.historyGame {
+	border: 1px solid #E0393A;
+	padding-top: 5px;
+	margin-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+
+	cursor: pointer;
+}
+
+.roundWinner {
+	border: 2px solid gold !important;
+}
+
+.historyProfilePicture {
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+	border: 3px solid #F64343;
+	margin-right: 10px;
+}
+
+.left {
+	float: left;
+}
+
+.rollX {
+	position: absolute;
+	bottom: 10px;
+	
+	transform: translateX(-50%); 
+}

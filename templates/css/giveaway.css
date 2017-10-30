@@ -1,0 +1,349 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+  -webkit-animation: bugfix infinite 1s;
+  background-image: url("/templates/img/background.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.beta{
+	
+	position: absolute;
+	left: 773px;
+	color: red;
+	text-shadow: none;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+}
+
+.fancy-hr {
+  margin-bottom: 60px; border-style: solid; border-width: 3px 0px 0px; color: rgb(113, 181, 209); padding-bottom: 2px;
+}
+
+.icon {
+   position: relative;
+   bottom: 45px;
+   opacity: 0.7;
+   transition: all 0.15s ease-in-out;
+   -webkit-transition: all 0.15s ease-in-out;
+   -moz-transition: all 0.15s ease-in-out;
+}
+
+.icon:hover {
+  opacity: 1;
+}
+
+@-webkit-keyframes bugfix {
+  from {
+    padding: 0;
+  }
+  to {
+    padding: 0;
+  }
+}
+
+#logos ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#logos ul li { display: inline; }
+
+#logos ul li a
+{
+text-decoration: none;
+padding: .2em 1em;
+
+}
+
+
+.logo {
+	width: 200px; 
+	height: 200px;
+	
+}
+
+.wrap {
+  display: block;
+  max-width: 1024px;
+  margin: 0 auto 2em;
+  padding: 0 1em;
+  width: 100%;
+}
+@media (min-width: 43.75em) {
+  .wrap {
+    padding: 3em;
+  }
+}
+
+p {
+  color: white;
+  text-shadow: none;
+}
+
+a:hover {
+	
+	color: white;
+  text-decoration: none;
+}
+
+a, a:visited {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+
+}
+
+.candy{
+	
+	color: white;
+	padding-left: 54px;
+	padding-top: 100px;
+}
+
+.candytab-section {
+  display: inline-block;
+  font-size: 1rem;
+  margin-bottom: 1em;
+  padding: 1em;
+  position: relative;
+  vertical-align: top;
+  width: 100%;
+}
+@media (min-width: 50em) {
+  .candytab-section {
+    font-size: .75rem;
+    padding: 1em 1.5em;
+  }
+}
+@media (min-width: 62.5em) {
+  .candytab-section {
+    font-size: 1rem;
+  }
+}
+.candytab-section h1 {
+  color: #085078;
+  font-size: 1.25em;
+  font-size: 5.5vw;
+  font-weight: 400;
+  margin-bottom: .25em;
+}
+@media (min-width: 32.25em) {
+  .candytab-section h1 {
+    font-size: 2.25em;
+    font-size: 4.9vw;
+  }
+}
+@media (min-width: 67.5em) {
+  .candytab-section h1 {
+    font-size: 3.25em;
+  }
+}
+.candytab-section > p, .candytab-section > h1 {
+  text-align: center;
+}
+.candytab-section > p {
+  font-size: 0.667em;
+  font-size: 2.8vw;
+  margin-bottom: 1em;
+}
+@media (min-width: 22.1875em) {
+  .candytab-section > p {
+    font-size: 0.667em;
+  }
+}
+@media (min-width: 31.25em) {
+  .candytab-section > p {
+    font-size: 1em;
+  }
+}
+@media (min-width: 81.25em) {
+  .candytab-section > p {
+    font-size: 1.15em;
+  }
+}
+
+div[class^="cat"] {
+  width: 70%;
+}
+div[class^="cat"] > label {
+  background: #71b5d1;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+  padding: 0.75em 0.5em;
+  -webkit-transition: all 0.55s;
+  transition: all 0.55s;
+}
+div[class^="cat"] > label:hover {
+  background: #85D8CE;
+}
+@media (min-width: 50em) {
+  div[class^="cat"] > label {
+    font-size: 1.25em;
+  }
+}
+div[class^="cat"] > input {
+  position: absolute;
+  z-index: -999;
+}
+div[class^="cat"] > input:focus + label {
+  background: #4bc5b7;
+  letter-spacing: 1px;
+}
+div[class^="cat"] .candytab-wrap {
+  height: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  width: 100%;
+}
+div[class^="cat"] > input:checked ~ .candytab-wrap {
+  max-height: 1000px;
+  opacity: 1;
+  -webkit-transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.candytab-wrap .candytab {
+  margin: 1em 0;
+}
+.candytab-wrap label {
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+@media (min-width: 50em) {
+  .candytab-wrap label {
+    font-size: 1.25em;
+  }
+}
+.candytab-wrap input {
+  position: absolute;
+  z-index: -999;
+  top: -10000px;
+}
+.candytab-wrap input:focus + label {
+  color: #064060;
+}
+.candytab-wrap input:not(:checked) ~ p {
+  height: 100%;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  -webkit-transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.candytab-wrap input:checked ~ p {
+  max-height: 500px;
+  opacity: 1;
+  -webkit-transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1.95s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input:focus {
+  border: 3px solid red;
+  outline: 3px solid red;
+  background: red;
+}
+
+a:focus {
+  color: #085078;
+  font-weight: bold;
+  outline: none;
+}
+
+
+.killer-table {
+  width: 100%;
+  display: block;
+}
+
+.killer-table .killer-60 {
+  width: 60%;
+  float: left;
+}
+
+.killer-table .killer-20 {
+  width: 20%;
+  float: left;
+}
+
+.killer-product-info .item {
+  background: #8fd4ef;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #fff;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.killer-product-info:not(.top):hover .item {
+  background: #65b6d3;  
+}
+
+.killer-product-info.top .item {
+  margin-bottom: 3px;
+  font-weight: bold;
+}
+
+.had-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 500;
+  background: rgba(0,0,0,.75);
+  display: none;
+}
+
+.had-wrap.active {
+  display: block;
+}
+
+.had-wrap > .modal {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 100px;
+  left: 25%;
+}
+
+.had-wrap > .modal > .modal-header {
+  overflow: hidden;
+}
+
+.had-wrap > .modal > .modal-header > .close {
+  display: block;
+  float: right;
+  padding: 10px 13px;
+  border-radius: 50%;
+  background: #d9534f;
+  color: #fff;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+.had-wrap > .modal > .modal-body > .had {
+  display: block;
+  padding: 20px;
+  background: #65b6d3;
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.had-wrap > .modal > .modal-body > .had > img {
+  width: 100%;
+}
